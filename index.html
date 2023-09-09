@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="header__text--center">Survey Form</h1>
+        <p id="description" class="header__text--center">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form__group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form__input"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form__group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form__input"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form__group">
+          <label id="number-label" for="number">Age</label>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            class="form__input"
+            max="99"
+            min="9"
+            placeholder="11"
+          />
+        </div>
+        <div class="form__group">
+          <label for="dropdown" id="dropdown-label">Job</label>
+          <select name="jobs" class="form__input" id="dropdown">
+            <option value="team-leader">Team Leader</option>
+            <option value="backend">Backend Developer</option>
+            <option value="frontend">Frontend Developer</option>
+            <option value="other">Other...</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <legend>What is your favourite mode of transport?</legend>
+          <input
+            type="radio"
+            class="form__input-radio"
+            name="car"
+            id="radio-car"
+            value="car"
+          />
+          <label for="radio-car" id="radio-label"> Car </label>
+          <input
+            type="radio"
+            class="form__input-radio"
+            name="car"
+            id="radio-bike"
+            value="bike"
+          />
+          <label for="radio-bike"> Bike </label>
+        </div>
+        <div class="form__group">
+          <legend>What is your favourite mode of transport?</legend>
+          <input
+            type="checkbox"
+            class="form__input-radio"
+            name="car"
+            id="checkbox-car"
+            value="car"
+          />
+          <label for="checkbox-car"> Car </label>
+          <input
+            type="checkbox"
+            class="form__input-radio"
+            name="car"
+            id="checkbox-bike"
+            value="bike"
+          />
+          <label for="checkbox-bike"> Bike </label>
+        </div>
+        <div class="form__group">
+          <label for="comments">Leave a comment</label>
+          <textarea
+            id="comments"
+            class="form__textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+        <div class="form__group">
+          <button id="submit" type="submit">submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
